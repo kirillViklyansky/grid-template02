@@ -581,6 +581,7 @@ a {
 }
 
 p {
+  letter-spacing: normal;
   color: #637588;
 }
 
@@ -1331,6 +1332,12 @@ input:focus {
     grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
   }
 }
+@media (max-width: 575.8px) {
+  .posts__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+  }
+}
 
 .post-item {
   transition: background-color 0.5s;
@@ -1483,6 +1490,36 @@ input:focus {
   .post-item:nth-of-type(6) {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+@media (max-width: 575.8px) {
+  .post-item:nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .post-item:nth-of-type(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .post-item:nth-of-type(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .post-item:nth-of-type(4) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .post-item:nth-of-type(5) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .post-item:nth-of-type(6) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
 }
