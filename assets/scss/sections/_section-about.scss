@@ -103,8 +103,10 @@
         padding-top: 60px;
         padding-bottom: 60px;
 
+
         &__container{
             grid-gap: 20px;
+            grid-template-columns: 1fr 236px;
         }
         
         p{
